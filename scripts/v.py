@@ -3,9 +3,6 @@ from neovim import attach
 import os, sys
 
 args = sys.argv[1:]
-#if not args:
- #   print "Usage: {} <filename> ...".format(sys.argv[0])
- #   sys.exit(1)
 
 addr = os.environ.get("NVIM_LISTEN_ADDRESS")
 if not addr:
